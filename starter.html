@@ -6,21 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Document</title>
+  <script src="p5.min.js"></script>
+  <script src="vanta.topology.min.js"></script>
 </head>
 
-<body>
+<body id="bg">
   <div id="navbar">
-    <h1>Sadid Ethun</h1>
+    <p style="font-size: 25px;">Sadid Ethun</p>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
+    <a href="#experiences">Experience</a>
   </div>
   <div id="profile">
-    <img width="250" src="images/headshot.png" />
+    <img id="headshot" width="350" src="images/headshot.png" />
     <div id="profile-text">
-      <p>Hello, I am</p>
-      <h2 id="myName">Sadid Ethun</h2>
-      <p>Boston University Student</p>
+      <p style="font-size: 20px;">Hi, I'm</p>
+      <h1 style="font-size: 40px;" id="myName">Sadid Ethun</h1>
+      <p style="font-size: 20px;">CS @ Boston University</p>
+      <br>
       <div class="icons">
         <img id="linkedin-img" width="50" src="images/linkedin.png" />
         <img id="github-img" width="50" src="images/github.png" />
@@ -37,7 +40,6 @@
       contact me at yourEmailHere@gmail.com
     </p>
     <br>
-    <!-- <div id="boxes"> -->
     <h3>My Skills</h3>
     <div id="skills">
       <ul>
@@ -61,7 +63,6 @@
         <li>Class 6</li>
       </ul>
     </div>
-    <!-- </div> -->
   </div>
 
   <div id="projects">
@@ -116,9 +117,24 @@
         </li>
       </ul>
     </div>
-    <!-- Add more experiences as needed -->
   </div>
+
+  
   <script src="script.js"></script>
+  <script>
+    VANTA.TOPOLOGY({
+      el: "#bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x8abbc2,
+      backgroundColor: 0xffffff
+    })
+    </script>
 </body>
 
 </html>
