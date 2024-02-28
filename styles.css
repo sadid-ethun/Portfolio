@@ -6,9 +6,9 @@
 }
 
 html {
-    margin: 0; 
-    padding: 0; 
-    height: 100%; 
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
 }
 
@@ -30,14 +30,15 @@ body {
 #navbar a {
     color: #000000;
     text-decoration: none;
+    font-size: 20px;
 }
 
 #profile {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 325px;
-    padding-top: 225px;
+    padding-bottom: 15%;
+    padding-top: 10%;
 }
 
 #profile-text {
@@ -45,14 +46,20 @@ body {
 }
 
 #about,
-#projects,
+#projectWrapper,
 #experiences {
     width: 70%;
     margin: 50px auto;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 25px;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
 }
 
 li {
@@ -60,10 +67,13 @@ li {
 }
 
 .project {
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
     margin-bottom: 30px;
     padding: 25px;
     border-radius: 10px;
+    width: 30%;
 }
 
 

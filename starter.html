@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Document</title>
-  <script src="p5.min.js"></script>
-  <script src="vanta.topology.min.js"></script>
+  <script src="assets/p5.min.js"></script>
+  <script src="assets/vanta.topology.min.js"></script>
 </head>
 
 <body id="bg">
   <div id="navbar">
-    <p style="font-size: 25px;">Sadid Ethun</p>
+    <p style="font-size: 30px;">Sadid Ethun</p>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+    <a href="#projectWrapper">Projects</a>
     <a href="#experiences">Experience</a>
   </div>
   <div id="profile">
@@ -27,6 +27,7 @@
       <div class="icons">
         <img id="linkedin-img" width="50" src="images/linkedin.png" />
         <img id="github-img" width="50" src="images/github.png" />
+        <img id="resume-img" width="50" src="images/resume.png" />
       </div>
     </div>
   </div>
@@ -34,7 +35,7 @@
   <div id="about">
     <h2>About Me</h2>
     <p>
-      I'm a student at Boston University studying [major]. I'm currently a
+      I'm a sophomore at Boston University studying Computer Science. I'm currently a
       member of [orginization]. I'm excited to learn more about [topic]. I
       have expereience in [skill 1], [skill 2], and [skill 3]. Feel free to
       contact me at yourEmailHere@gmail.com
@@ -65,17 +66,19 @@
     </div>
   </div>
 
-  <div id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h4>Project 1 Name</h4>
-      <p>Project description here</p>
-      <button id="project1btn">GitHub</button>
-    </div>
-    <div class="project">
-      <h4>Project 2 Name</h4>
-      <p>Project description here</p>
-      <button id="project2btn">GitHub</button>
+  <div id="projectWrapper">
+    <h2 style="text-align: center;">Projects</h2>
+    <div id="projects">
+      <div class="project">
+        <h4>Project 1 Name</h4>
+        <p>Project description here</p>
+        <button id="project1btn">GitHub</button>
+      </div>
+      <div class="project">
+        <h4>Project 2 Name</h4>
+        <p>Project description here</p>
+        <button id="project2btn">GitHub</button>
+      </div>
     </div>
   </div>
   <div id="experiences">
@@ -119,7 +122,7 @@
     </div>
   </div>
 
-  
+
   <script src="script.js"></script>
   <script>
     VANTA.TOPOLOGY({
@@ -134,7 +137,7 @@
       color: 0x8abbc2,
       backgroundColor: 0xffffff
     })
-    </script>
+  </script>
 </body>
 
 </html>
