@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Document</title>
-  <script src="assets/p5.min.js"></script>
-  <script src="assets/vanta.topology.min.js"></script>
+  <!-- <script src="assets/p5.min.js"></script>
+  <script src="assets/vanta.topology.min.js"></script> -->
+  <script src="three.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
 </head>
 
 <body id="bg">
   <div id="navbar">
-    <p style="font-size: 30px;">Sadid Ethun</p>
+    <img id="my-logo" width="100" src="images/my_logo.png" />
     <a href="#about">About</a>
     <a href="#projectWrapper">Projects</a>
     <a href="#experiences">Experience</a>
@@ -41,28 +43,32 @@
       contact me at yourEmailHere@gmail.com
     </p>
     <br>
-    <h3>My Skills</h3>
-    <div id="skills">
-      <ul>
-        <li>Languages: HTML, CSS, JavaScript</li>
-        <li>Frameworks/Applications: GitHub, Git, VSCode</li>
-      </ul>
+    <div id="skillsWrapper">
+      <h3>My Skills</h3>
+      <div id="skills">
+        <ul>
+          <li>Languages: HTML, CSS, JavaScript</li>
+          <li>Frameworks/Applications: GitHub, Git, VSCode</li>
+        </ul>
+      </div>
     </div>
     <br>
-    <h3>Relevant Coursework</h3>
-    <div id="courses">
-      <ul>
-        <li>Class 1</li>
-        <li>Class 2</li>
-      </ul>
-      <ul>
-        <li>Class 3</li>
-        <li>Class 4</li>
-      </ul>
-      <ul>
-        <li>Class 5</li>
-        <li>Class 6</li>
-      </ul>
+    <div id="coursesWrapper">
+      <h3>Relevant Coursework</h3>
+      <div id="courses">
+        <ul>
+          <li>Data Structures and Algorithms</li>
+          <li>Computer Systems</li>
+        </ul>
+        <ul>
+          <li><img style="width: 30px; padding-right: 10px;" src="images/checked.png" />Linear Algebra</li>
+          <li>Discrete Math</li>
+        </ul>
+        <ul>
+          <li>Algorithm Analysis</li>
+          <li>Probability in Computing</li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -124,7 +130,7 @@
 
 
   <script src="script.js"></script>
-  <script>
+  <!-- <script>
     VANTA.TOPOLOGY({
       el: "#bg",
       mouseControls: true,
@@ -137,7 +143,23 @@
       color: 0x8abbc2,
       backgroundColor: 0xffffff
     })
-  </script>
+  </script> -->
+  <script>
+    VANTA.FOG({
+      el: "#bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0xffffff,
+      midtoneColor: 0x339cc8,
+      lowlightColor: 0x202020,
+      baseColor: 0xffffff,
+      blurFactor: 0.50,
+      zoom: 1.00
+    })
+    </script>
 </body>
 
 </html>
