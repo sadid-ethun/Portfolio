@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portfolio</title>
+  <!-- <script src="assets/p5.min.js"></script>
+  <script src="assets/vanta.topology.min.js"></script> -->
+  <script src="three.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
+</head>
+
+<body id="bg">
+  <div id="navbar">
+    <img id="my-logo" width="100" src="images/my_logo.png" />
+    <a href="#about">About</a>
+    <a href="#projectWrapper">Projects</a>
+    <a href="#experiences">Experience</a>
+  </div>
+  <div id="profile">
+    <img id="headshot" width="400" src="images/headshot.png" />
+    <div id="profile-text">
+      <p style="font-size: 20px;">Hi, I'm</p>
+      <h1 id="myName">Sadid Ethun</h1>
+      <p style="font-size: 20px;">CS @ Boston University</p>
+      <br>
+      <div class="icons">
+        <img id="linkedin-img" width="50" src="images/linkedin.png" />
+        <img id="github-img" width="50" src="images/github.png" />
+        <img id="resume-img" width="50" src="images/resume.png" />
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="hidden">
+    <h2>About Me</h2>
+    <p>
+      I'm a sophomore at Boston University studying Computer Science. I'm currently a
+      member of [orginization]. I'm excited to learn more about [topic]. I
+      have expereience in [skill 1], [skill 2], and [skill 3]. Feel free to
+      contact me at yourEmailHere@gmail.com
+    </p>
+    <br>
+    <div id="wrapper">
+      <div id="skillsWrapper">
+        <h2>My Skills</h2>
+        <div id="skills">
+          <ul>
+            <li>Languages: HTML, CSS, JavaScript</li>
+            <li>Frameworks/Applications: GitHub, Git, VSCode</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div id="coursesWrapper">
+        <h2>Relevant Coursework</h2>
+        <div id="courses">
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Computer Systems</li>
+            <li>Algorithm Analysis</li>
+          </ul>
+          <ul>
+            <li>Linear Algebra</li>
+            <li>Discrete Math</li>
+            <li>Probability in Computing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div id="projectWrapper" class="hidden">
+    <h2 style="text-align: center;">Projects</h2>
+    <div id="projects">
+      <div class="project">
+        <h4>Project 1 Name</h4>
+        <p>Project description here</p>
+        <button id="project1btn">GitHub</button>
+      </div>
+      <div class="project">
+        <h4>Project 2 Name</h4>
+        <p>Project description here</p>
+        <button id="project2btn">GitHub</button>
+      </div>
+    </div>
+  </div>
+  <div id="experiences" class="hidden">
+    <h2>Experiences</h2>
+    <div class="experience">
+      <h3>Software Engineer</h3>
+      <h4>Company A, New York, NY</h4>
+      <p class="date">June 2021 - Present</p>
+      <ul>
+        <li>
+          Developed and maintained scalable web applications using React and
+          Node.js, resulting in a 25% increase in user engagement.
+        </li>
+        <li>
+          Collaborated with cross-functional teams to design and implement new
+          features, improving customer satisfaction by 20%.
+        </li>
+        <li>
+          Optimized application performance, reducing load times by 30%.
+        </li>
+      </ul>
+    </div>
+    <div class="experience">
+      <h3>Web Developer Intern</h3>
+      <h4>Startup B, San Francisco, CA</h4>
+      <p class="date">January 2020 - August 2020</p>
+      <ul>
+        <li>
+          Assisted in the development of an e-commerce platform, enhancing the
+          shopping cart functionality.
+        </li>
+        <li>
+          Implemented responsive design principles, making the website
+          accessible on a wide range of devices.
+        </li>
+        <li>
+          Conducted A/B testing to evaluate user experience designs, leading
+          to a 15% increase in conversion rates.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <!-- <script>
+    VANTA.TOPOLOGY({
+      el: "#bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x8abbc2,
+      backgroundColor: 0xffffff
+    })
+  </script> -->
+  <script>
+    VANTA.FOG({
+      el: "#bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0xffffff,
+      midtoneColor: 0x339cc8,
+      lowlightColor: 0x202020,
+      baseColor: 0xffffff,
+      blurFactor: 0.50,
+      zoom: 1.00
+    })
+    </script>
+</body>
+
+</html>
