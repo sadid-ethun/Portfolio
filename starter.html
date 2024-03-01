@@ -20,10 +20,10 @@
     <a href="#experiences">Experience</a>
   </div>
   <div id="profile">
-    <img id="headshot" width="350" src="images/headshot.png" />
+    <img id="headshot" width="400" src="images/headshot.png" />
     <div id="profile-text">
       <p style="font-size: 20px;">Hi, I'm</p>
-      <h1 style="font-size: 40px;" id="myName">Sadid Ethun</h1>
+      <h1 id="myName">Sadid Ethun</h1>
       <p style="font-size: 20px;">CS @ Boston University</p>
       <br>
       <div class="icons">
@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <div id="about">
+  <div id="about" class="hidden">
     <h2>About Me</h2>
     <p>
       I'm a sophomore at Boston University studying Computer Science. I'm currently a
@@ -43,36 +43,37 @@
       contact me at yourEmailHere@gmail.com
     </p>
     <br>
-    <div id="skillsWrapper">
-      <h3>My Skills</h3>
-      <div id="skills">
-        <ul>
-          <li>Languages: HTML, CSS, JavaScript</li>
-          <li>Frameworks/Applications: GitHub, Git, VSCode</li>
-        </ul>
+    <div id="wrapper">
+      <div id="skillsWrapper">
+        <h2>My Skills</h2>
+        <div id="skills">
+          <ul>
+            <li>Languages: HTML, CSS, JavaScript</li>
+            <li>Frameworks/Applications: GitHub, Git, VSCode</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div id="coursesWrapper">
+        <h2>Relevant Coursework</h2>
+        <div id="courses">
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Computer Systems</li>
+            <li>Algorithm Analysis</li>
+          </ul>
+          <ul>
+            <li>Linear Algebra</li>
+            <li>Discrete Math</li>
+            <li>Probability in Computing</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <br>
-    <div id="coursesWrapper">
-      <h3>Relevant Coursework</h3>
-      <div id="courses">
-        <ul>
-          <li>Data Structures and Algorithms</li>
-          <li>Computer Systems</li>
-        </ul>
-        <ul>
-          <li><img style="width: 30px; padding-right: 10px;" src="images/checked.png" />Linear Algebra</li>
-          <li>Discrete Math</li>
-        </ul>
-        <ul>
-          <li>Algorithm Analysis</li>
-          <li>Probability in Computing</li>
-        </ul>
-      </div>
-    </div>
+    
   </div>
 
-  <div id="projectWrapper">
+  <div id="projectWrapper" class="hidden">
     <h2 style="text-align: center;">Projects</h2>
     <div id="projects">
       <div class="project">
@@ -87,7 +88,7 @@
       </div>
     </div>
   </div>
-  <div id="experiences">
+  <div id="experiences" class="hidden">
     <h2>Experiences</h2>
     <div class="experience">
       <h3>Software Engineer</h3>
