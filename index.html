@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Portfolio</title>
   <!-- <script src="assets/p5.min.js"></script>
   <script src="assets/vanta.topology.min.js"></script> -->
@@ -13,27 +14,31 @@
 </head>
 
 <body id="bg">
-  <div id="navbar">
-    <img id="my-logo" width="100" src="images/my_logo.png" />
-    <a href="#about">About</a>
-    <a href="#projectWrapper">Projects</a>
-    <a href="#experiences">Experience</a>
-  </div>
-  <div id="profile">
-    <img id="headshot" width="400" src="images/headshot.png" />
-    <div id="profile-text">
-      <p style="font-size: 20px;">Hi, I'm</p>
-      <h1 id="myName">Sadid Ethun</h1>
-      <p style="font-size: 20px;">CS @ Boston University</p>
-      <br>
-      <div class="icons">
-        <img id="linkedin-img" width="50" src="images/linkedin.png" />
-        <img id="github-img" width="50" src="images/github.png" />
-        <img id="resume-img" width="50" src="images/resume.png" />
+<div id="fullpage">
+  <div class="section">
+    <div id="navbar">
+      <img id="my-logo" width="100" src="images/my_logo.png" />
+      <a href="#about">About</a>
+      <a href="#projectWrapper">Projects</a>
+      <a href="#experiences">Experience</a>
+    </div>
+    <div id="profile">
+      <img id="headshot" width="400" src="images/headshot.png" />
+      <div id="profile-text">
+        <p style="font-size: 20px;">Hi, I'm</p>
+        <h1 id="myName">Sadid Ethun</h1>
+        <p style="font-size: 20px;">CS @ Boston University</p>
+        <br>
+        <div class="icons">
+          <img id="linkedin-img" width="50" src="images/linkedin.png" />
+          <img id="github-img" width="50" src="images/github.png" />
+          <img id="resume-img" width="50" src="images/resume.png" />
+        </div>
       </div>
     </div>
   </div>
 
+<div class="section">
   <div id="about" class="hidden">
     <h2>About Me</h2>
     <p>
@@ -43,7 +48,7 @@
       contact me at yourEmailHere@gmail.com
     </p>
     <br>
-    <div id="wrapper">
+    <div id="skillsCourseWrapper">
       <div id="skillsWrapper">
         <h2>My Skills</h2>
         <div id="skills">
@@ -70,11 +75,12 @@
         </div>
       </div>
     </div>
-    
   </div>
-
+</div>
+  
+<div class="section">
   <div id="projectWrapper" class="hidden">
-    <h2 style="text-align: center;">Projects</h2>
+    <h2>Projects</h2>
     <div id="projects">
       <div class="project">
         <h4>Project 1 Name</h4>
@@ -88,6 +94,9 @@
       </div>
     </div>
   </div>
+</div>
+  
+<div class="section">
   <div id="experiences" class="hidden">
     <h2>Experiences</h2>
     <div class="experience">
@@ -128,9 +137,26 @@
       </ul>
     </div>
   </div>
+</div>
+</div>
+  
+  
 
 
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new fullpage('#fullpage', {
+      autoScrolling: true,
+      navigation: true,
+      fitToSection: true,
+      controlArrows: true,
+      controlArrowsHTML: [
+        '<div class="fp-arrow"></div>', 
+        '<div class="fp-arrow"></div>'
+    ],
+    });
+  </script>
   <!-- <script>
     VANTA.TOPOLOGY({
       el: "#bg",

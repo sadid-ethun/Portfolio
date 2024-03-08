@@ -11,7 +11,13 @@ html {
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
+    /* scroll-snap-type: y proximity; */
 }
+
+/* section {
+    scroll-snap-align: center;
+    scroll-snap-stop: normal;
+} */
 
 h1, h2, h3, h4 {
     font-weight: 500;
@@ -61,6 +67,11 @@ body {
     font-size: 20px;
 }
 
+#navbar a:hover {
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
 #headshot {
     border-radius: 100%;
     border-width: 2px;
@@ -84,11 +95,12 @@ body {
 #experiences {
     width: 65%;
     margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 25px;
     margin-bottom: 300px;
+    backdrop-filter: blur(10px);
 }
 
 #skillsWrapper, #coursesWrapper {
@@ -109,7 +121,7 @@ body {
     justify-content: space-evenly;
 }
 
-#wrapper {
+#skillsCourseWrapper {
     display: flex;
     justify-content: space-evenly;
 }
@@ -142,15 +154,20 @@ button {
 .icons img:hover,
 button:hover {
     transform: scale(1.1);
+    transition: .5s;
 }
 
 .hidden {
     opacity: 0;
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .show {
     opacity: 1;
     transform: translateX(0);
+}
+
+.fp-watermark {
+    display: none;
 }
