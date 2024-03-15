@@ -3,13 +3,6 @@ console.log("Hello World");
 const projects = document.querySelector(".project");
 console.log(projects);
 
-const myName = document.getElementById("myName");
-myName.textContent = 'Sadid Ethun';
-myName.style.color = 'black';
-
-
-
-
 const project1btn = document.getElementById("project1btn");
 const project2btn = document.getElementById("project2btn");
 
