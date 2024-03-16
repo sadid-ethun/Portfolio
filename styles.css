@@ -5,6 +5,7 @@
     --secondary: #359DFF;
     --primary-font: #F0F0F0;
     --secondary-font: #1A1A1A;
+    color-scheme: dark;
 }
 
 * {
@@ -228,6 +229,10 @@ span {
 
 .project p {
     font-size: 1.25vw;
+}
+
+.project h3 {
+    text-align: center;
 }
 
 button {
