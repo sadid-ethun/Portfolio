@@ -19,11 +19,11 @@
       <div id="navbar">
         <img id="my-logo" width="100" src="images/my_logo.png" />
         <a href="#section2">About</a>
-        <a href="#section3">Projects</a>
-        <a href="#section4">Experience</a>
+        <a href="#section3">Skills</a>
+        <a href="#section4">Projects</a>
+        <a href="#section5">Experience</a>
       </div>
-      <div id="profile" class="hidden">
-        <img id="headshot" width="400" src="images/headshot.png" />
+      <div id="profile">
         <div id="profile-text">
           <p>Hi, I'm</p>
           <h1 id="myName">Sadid Ethun</h1>
@@ -39,41 +39,54 @@
     </div>
 
     <div class="section">
-      <div id="about" class="hidden">
-        <h2>About Me</h2>
-        <p>
-          I'm a sophomore at Boston University studying Computer Science. I'm currently developing my frontend and
-          backend skills as a member of Hack4Impact and developer for a real estate startup . I'm excited to learn more
-          about AI and how it can be used to create new technologies to improve society.
-        </p>
-        <br>
-        <div id="skillsCourseWrapper">
-          <div id="skillsWrapper">
-            <h2>My Skills</h2>
-            <div id="skills">
-              <ul>
-                <li>Languages: HTML, CSS, JavaScript</li>
-                <li>Frameworks/Applications: GitHub, Git, VSCode</li>
-              </ul>
-            </div>
+      <div id="aboutWrapper" class="hidden">
+        <h1>About</h1>
+        <div id="about">
+          <img id="headshot" src="images/headshot.png" />
+          <p>
+            I'm a sophomore at Boston University studying Computer Science. I'm currently developing my frontend and
+            backend skills as a member of Hack4Impact and as a developer for a real estate startup. I'm excited to learn
+            more about AI and how it can be used to create new technologies to improve society.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div id="skillsCourseWrapper" class="hidden">
+        <div id="skillsWrapper">
+          <h1>Skills</h1>
+          <div id="skills">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C</li>
+            </ul>
+            <ul>
+              <li>C#</li>
+              <li>.NET</li>
+              <li>MySQL</li>
+              <li>React</li>
+              <li>Node</li>
+              <li>Firebase</li>
+            </ul>
           </div>
-          <br>
-          <div id="coursesWrapper">
-            <h2>Relevant Coursework</h2>
-            <div id="courses">
-              <ul>
-                <li>Data Structures and Algorithms</li>
-                <li>Probability in Computing</li>
-              </ul>
-              <ul>
-                <li>Computer Systems</li>
-                <li>Algorithm Analysis</li>
-              </ul>
-              <ul>
-                <li>Linear Algebra</li>
-                <li>Discrete Math</li>
-              </ul>
-            </div>
+        </div>
+        <br>
+        <div id="coursesWrapper">
+          <h1>Coursework</h1>
+          <div id="courses">
+            <ul>
+              <li>Data Structures and Algorithms</li>
+              <li>Discrete Math</li>
+              <li>Computer Systems</li>
+              <li>Linear Algebra</li>
+              <li>Algorithm Analysis</li>
+              <li>Probability in Computing</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -81,17 +94,28 @@
 
     <div class="section">
       <div id="projectWrapper" class="hidden">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
         <div id="projects">
           <div class="project">
-            <h4>Project 1 Name</h4>
-            <p>Project description here</p>
-            <button id="project1btn">GitHub</button>
+            <h3>FoodBook</h3>
+            <p>Web app utilizing Python, Yelp API, and Spoonacular API to give restaurant recommendations based on
+              user-specified filters and recipe suggestions containing ingredients and instructions.
+              Users can add friends and post images of food on a feed where others can like
+              and comment.
+            </p>
+            <div class="buttons">
+              <button id="project1btn">GitHub</button>
+            </div>
           </div>
           <div class="project">
-            <h4>Project 2 Name</h4>
-            <p>Project description here</p>
-            <button id="project2btn">GitHub</button>
+            <h3>CallAssist</h3>
+            <p>Mobile app that automates phone calls to bypass virtual receptionists deployed by major wireless and
+              internet companies. Uses Twilio API to transcribe user speech-to-text for program to process and generate
+              automated responses.
+            </p>
+            <div class="buttons">
+              <button id="project2btn">GitHub</button>
+            </div>
           </div>
         </div>
       </div>
@@ -99,33 +123,107 @@
 
     <div class="section">
       <div id="experiences" class="hidden">
-        <h2>Experiences</h2>
+        <h1>Experiences</h1>
         <div class="experience">
-          <h3>Position</h3>
-          <h4>COmpany, Location</h4>
-          <p class="date">Date</p>
+          <h3>Project Manager</h3>
+          <h4>TAMID Group, Boston University</h4>
+          <h5 class="date">January 2024 - Present</h5>
           <ul>
             <li>
-              Info
+              Implement backend and REST API service for real estate company, DREA, using .NET and C# application that
+              handles authentication of users using Firebase.
+            </li>
+            <li>
+              Facilitate communication between a real estate AI company, DREA, and a 10-person software development team
+              through weekly meetings.
+            </li>
+            <li>
+              Assign work to team members based on company guidelines and personal strengths to maximize efficiency.
             </li>
           </ul>
         </div>
         <div class="experience">
-          <h3>Position</h3>
-          <h4>COmpany, Location</h4>
-          <p class="date">Date</p>
+          <h3>Tutor</h3>
+          <h4>Boston University, Boston, MA</h4>
+          <h5 class="date">September 2023 - Present</h5>
           <ul>
             <li>
-              Info
+              Tutor 20+ middle school students in math and science at a Boston public school.
+            </li>
+            <li>
+              Communicate with teachers after each session to achieve learning objectives and support struggling
+              students.
+            </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h3>Software Developer</h3>
+          <h4>Weelrn, Boston, MA</h4>
+          <h5 class="date">September - December 2023</h5>
+          <ul>
+            <li>
+              Created a Python program to gather data from Google Classroom API and organized it into an Excel sheet
+              using Pandas for educators to track progress and engagement of students.
+            </li>
+            <li>
+              Attended weekly meetings with project managers and peers to monitor progress and obtain feedback on
+              current work.
+            </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h3>Tech Intern</h3>
+          <h4>J1 Drivers Training Center, Queens, NY</h4>
+          <h5 class="date">July - August 2023</h5>
+          <ul>
+            <li>
+              Maintained databases for all clients and verified course completion data for 30+ daily clients to receive
+              their TLC license.
+            <li>
+              Conceptualized development of an online platform and tested it for bugs to help company go 100%
+              paperless.
+            </li>
+            <li>
+              Attracted clients through Google Ads and generated over 200 five-star reviews.
+            </li>
+            </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h3>Mentee</h3>
+          <h4>Google, New York, NY</h4>
+          <h5 class="date">January - June 2022</h5>
+          <ul>
+            <li>
+              Leveraged JavaScript and MERN stack to develop front end for a mobile app, Call Assist, to automate phone
+              calls to bypass virtual receptionists deployed by major companies.
+            </li>
+            <li>
+              Utilized Twilio API to transcribe user speech-to-text for program to process and generate automated
+              responses.
+            </li>
+            <li>
+              Collaborated weekly with a Google employee to solve problems encountered throughout development process.
+            </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h3>Tech Intern</h3>
+          <h4>Pyramid Safety & Health Solutions Inc., Queens, NY</h4>
+          <h5 class="date">Date</h5>
+          <ul>
+            <li>
+              Analyzed housing data containing 1000+ entries using Java and Excel functions to find potential customers.
+            </li>
+            <li>
+              Designed a website with landing pages and leveraged Facebook advertising to increase customer reach by
+              15%.
             </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-
-
-
 
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
@@ -141,7 +239,8 @@
         '<div class="fp-arrow"></div>',
         '<div class="fp-arrow"></div>'
       ],
-      anchors: ['section1', 'section2', 'section3', 'section4']
+      anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
+      scrollingSpeed: 2000,
     });
   </script>
 </body>

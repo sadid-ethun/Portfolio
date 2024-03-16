@@ -25,10 +25,20 @@ html {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-weight: 500;
-    text-align: center;
     padding-bottom: 1vw;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+    text-align: center;
+    color: var(--secondary);
+    background: -webkit-linear-gradient(left, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1 {
@@ -44,14 +54,15 @@ h3 {
 }
 
 p {
-    font-size: 1.25vw;
+    font-size: 1.5vw;
+    text-align: justify;
 }
 
 body {
     font-family: 'Poppins';
     background-color: #1A1A1A;
     color: #F0F0F0;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .section {
@@ -80,7 +91,7 @@ body {
 #navbar a {
     color: #F0F0F0;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 2vw;
     display: inline-block;
     position: relative;
 }
@@ -113,7 +124,7 @@ body {
 
 #myName {
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 8vw;
     color: var(--secondary);
     background: -webkit-linear-gradient(left, var(--primary), var(--secondary));
     -webkit-background-clip: text;
@@ -126,26 +137,36 @@ body {
     align-items: center;
     margin-top: 8vw;
     margin-bottom: 8vw;
+    text-align: center;
 }
 
 #profile p {
     font-size: 2vw;
+    text-align: center;
 }
 
-#profile-text {
-    margin-left: 3vw;
-}
-
-#about,
+#aboutWrapper,
+#skillsCourseWrapper,
 #projectWrapper,
 #experiences {
     width: 75%;
     margin: 3vw auto;
     background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
     border-radius: 1vw;
-    padding: 2vw;
+    padding: 3vw;
     backdrop-filter: blur(1vw);
+}
+
+#about {
+    display: flex;
+    padding: 2vw;
+    align-items: center;
+    text-align: justify;
+}
+
+#about p {
+    padding-left: 4vw;
 }
 
 #skillsWrapper,
@@ -154,12 +175,14 @@ body {
     border-style: solid;
     border-width: 0.2vw;
     padding: 1.5vw;
-    /* width: 40%; */
+    width: 40%;
     border-color: var(--secondary-font);
-    margin-bottom: 1vw;
 }
 
-#courses {
+
+
+#courses,
+#skills {
     display: flex;
     justify-content: space-evenly;
 }
@@ -170,14 +193,21 @@ body {
 }
 
 #skillsCourseWrapper {
-    /* display: flex; */
+    display: flex;
     justify-content: space-evenly;
 }
 
+ul {
+    padding-left: 1.5vw;
+}
+
 li {
-    list-style: inside;
-    padding-bottom: 1vw;
-    padding-right: 1vw;
+    list-style: outside;
+    padding-left: 0.5vw;
+}
+
+li+li {
+    padding-top: 1vw;
 }
 
 span {
@@ -191,11 +221,17 @@ span {
     margin-bottom: 2vw;
     padding: 2vw;
     border-radius: 1vw;
-    width: 30%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.project p {
+    font-size: 1.25vw;
 }
 
 button {
-    background-color: var(--primary);
+    background-color: var(--primary-font);
     color: var(--secondary-font);
     border-radius: 1vw;
     padding: 1vw;
@@ -206,7 +242,32 @@ button {
     font-weight: 500;
     margin-top: 2vw;
     justify-content: space-evenly;
+}
 
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#project2btn {
+    margin-top: 5.75vw;
+}
+
+.experience {
+    border-style: solid;
+    border-width: 0.2vw;
+    border-radius: 1vw;
+    border-color: var(--secondary-font);
+    padding: 2vw;
+    text-align: left;
+}
+
+.experience+.experience {
+    margin-top: 2vw;
+}
+
+.experience li {
+    font-size: 1.25vw;
 }
 
 .icons img {
@@ -231,7 +292,7 @@ button:hover {
 .hidden {
     opacity: 0;
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .show {

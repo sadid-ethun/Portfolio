@@ -7,11 +7,11 @@ const project1btn = document.getElementById("project1btn");
 const project2btn = document.getElementById("project2btn");
 
 project1btn.addEventListener("click", function () {
-    window.open("https://github.com")
+    window.open("https://github.com/FoodBook")
 });
 
 project2btn.addEventListener("click", function () {
-    window.open("https://github.com")
+    window.open("https://github.com/CallAssist")
 });
 
 const githubImg = document.getElementById("github-img");
