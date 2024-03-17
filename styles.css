@@ -117,10 +117,10 @@ body {
 
 #headshot {
     width: 25vw;
-    border-radius: 100%;
-    border-width: 0.2vw;
+    border-radius: 2vw;
+    border-width: 0.25vw;
     border-style: solid;
-    border-color: var(--primary-font);
+    border-color: var(--secondary-font);
 }
 
 #myName {
