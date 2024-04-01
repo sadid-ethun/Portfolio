@@ -16,15 +16,16 @@ const project1btn = document.getElementById("project1btn");
 const project2btn = document.getElementById("project2btn");
 
 project1btn.addEventListener("click", function () {
-    window.open("https://github.com/FoodBook")
+    window.open("https://github.com/sadid-ethun/Foodbook")
 });
 
 project2btn.addEventListener("click", function () {
-    window.open("https://github.com/CallAssist")
+    window.open("https://github.com/sadid-ethun/CallAssist")
 });
 
 const githubImg = document.getElementById("github-img");
 const linkedinImg = document.getElementById("linkedin-img");
+const resumeImg = document.getElementById("resume-img");
 
 githubImg.addEventListener("click", function () {
     window.open("https://github.com/sadid-ethun")
@@ -32,6 +33,10 @@ githubImg.addEventListener("click", function () {
 
 linkedinImg.addEventListener("click", function () {
     window.open("https://linkedin.com/in/sadid-ethun")
+});
+
+resumeImg.addEventListener("click", function () {
+    window.open("./assets/Resume.pdf")
 });
 
 const observer = new IntersectionObserver((entries) => {
