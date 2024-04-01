@@ -1,4 +1,13 @@
-console.log("Hello World");
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 2000, fill: "forwards" });
+}
 
 const projects = document.querySelector(".project");
 console.log(projects);
@@ -38,3 +47,4 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+

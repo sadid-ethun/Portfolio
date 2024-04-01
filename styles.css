@@ -74,6 +74,34 @@ body {
     justify-content: center;
 }
 
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    /* 50% {
+      scale: 1 1.25;
+    } */
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+
+#blob {
+    height: 20vw;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    animation: rotate 20s infinite;
+    opacity: 0.5;
+    filter: blur(3vw);
+}
+
 #navbar {
     display: flex;
     justify-content: space-evenly;
