@@ -1,13 +1,28 @@
 const blob = document.getElementById("blob");
 
-window.onpointermove = event => { 
-  const { clientX, clientY } = event;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 2000, fill: "forwards" });
+window.onpointermove = event => {
+    const { clientX, clientY } = event;
+
+    blob.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+    }, { duration: 2000, fill: "forwards" });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    new fullpage('#fullpage', {
+        autoScrolling: true,
+        navigation: true,
+        fitToSection: true,
+        controlArrows: true,
+        controlArrowsHTML: [
+            '<div class="fp-arrow"></div>',
+            '<div class="fp-arrow"></div>'
+        ],
+        anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
+        scrollingSpeed: 2000
+    });
+});
 
 const projects = document.querySelector(".project");
 console.log(projects);
