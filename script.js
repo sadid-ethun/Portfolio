@@ -1,13 +1,13 @@
-const blob = document.getElementById("blob");
+// const blob = document.getElementById("blob");
 
-window.onpointermove = event => {
-    const { clientX, clientY } = event;
+// window.onpointermove = event => {
+//     const { clientX, clientY } = event;
 
-    blob.animate({
-        left: `${clientX}px`,
-        top: `${clientY}px`
-    }, { duration: 2000, fill: "forwards" });
-}
+//     blob.animate({
+//         left: `${clientX}px`,
+//         top: `${clientY}px`
+//     }, { duration: 2000, fill: "forwards" });
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
     new fullpage('#fullpage', {
@@ -68,3 +68,51 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+const coords = { x: 0, y: 0 };
+const circles = document.querySelectorAll(".circle");
+const firstCircle = document.querySelector(".circle");
+
+circles.forEach(function (circle) {
+  circle.x = 0;
+  circle.y = 0;
+  circle.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+});
+
+window.addEventListener("mousemove", function(e){
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+  
+});
+
+function animateCircles() {
+  
+  let x = coords.x;
+  let y = coords.y;
+  
+  circles.forEach(function (circle, index) {
+    circle.style.left = x - 12 + "px";
+    circle.style.top = y - 12 + "px";
+    
+    circle.style.scale = (circles.length - index) / circles.length;
+    
+    circle.x = x;
+    circle.y = y;
+
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+  });
+ 
+  requestAnimationFrame(animateCircles);
+}
+
+animateCircles();
+
+document.addEventListener('click', function() {
+    firstCircle.style.transform = 'scale(1.5)';
+    firstCircle.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+    
+    setTimeout(function() {
+        firstCircle.style.transform = 'scale(1)';
+    }, 50);
+});
