@@ -335,7 +335,7 @@ button:hover {
     /* transform: translateX(0); */
 }
 
-.circle {
+/* .circle {
     height: 23px;
     width: 23px;
     border-radius: 100%;
@@ -348,7 +348,7 @@ button:hover {
     left: 0;
     pointer-events: none;
     transition: transform 0.05s ease;
-  }
+  } */
 
 .fp-watermark {
     display: none;
